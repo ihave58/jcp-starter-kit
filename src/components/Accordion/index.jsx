@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styles from './Accordion.css';
+import style from './style.css';
 
 class Accordion extends Component {
     constructor(props) {
@@ -30,9 +30,9 @@ class Accordion extends Component {
 
     render() {
         let panes = this.renderList();
-        //const stateStyle = (this.state.active)?styles.active:styles.inactive;
+        //const stateStyle = (this.state.active)?style.active:style.inactive;
         return (
-            <div className={styles.accordionSection}>
+            <div className={style.accordionSection}>
                 {panes}
             </div>
         );
@@ -45,7 +45,7 @@ class Accordion extends Component {
 Accordion.propTypes = {
     elements: React.PropTypes.array,
     activeIndex: React.PropTypes.number
-}
+};
 
 //Adding defaultProps in here
 
@@ -64,9 +64,9 @@ class AccordionSub extends Component {
 
     render() {
         const {content, title, uniqueId, activeIndex, showOnLoad} = this.props;
-        const stateStyle = (activeIndex == uniqueId) ? styles.active : "";
-        const accordionStyle = (stateStyle) ? (styles.accordion + " " + styles.active) : (styles.accordion);
-        const panelStyle = (stateStyle) ? (styles.panel + " " + styles.show) : (styles.panel);
+        const stateStyle = (activeIndex == uniqueId) ? style.active : "";
+        const accordionStyle = (stateStyle) ? (style.accordion + " " + style.active) : (style.accordion);
+        const panelStyle = (stateStyle) ? (style.panel + " " + style.show) : (style.panel);
         return (
             <div className="accordion-box">
                 <h3 className={accordionStyle} onClick={this.toggle.bind(this, this.props.uniqueId)}>{title}</h3>
@@ -84,6 +84,6 @@ AccordionSub.propTypes = {
     uniqueId: React.PropTypes.number.isRequired,
     activeIndex: React.PropTypes.number.isRequired,
     showOnLoad: React.PropTypes.bool.isRequired
-}
+};
 
 export default Accordion

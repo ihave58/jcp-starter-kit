@@ -1,6 +1,6 @@
-import React, {Component, PropTypes} from 'react';
-import styles from './DepartmentCard.css';
-import {Card, Image} from '../../atoms';
+import React, {Component} from 'react';
+import style from './style.css';
+import Image from '../Image';
 
 class DepartmentCard extends Component {
     constructor() {
@@ -9,8 +9,8 @@ class DepartmentCard extends Component {
 
     render() {
         return (
-            <div className={styles.departmentCard}>
-                <div className={styles.imgBlock}>
+            <div className={style.departmentCard}>
+                <div className={style.imgBlock}>
                     <Image src={this.props.image} alt=""/>
                 </div>
                 <div>

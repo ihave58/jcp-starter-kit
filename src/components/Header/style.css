@@ -1,0 +1,36 @@
+@import "../../public/styles/variables.css";
+
+.header {
+    width: 100%;
+    padding: 12px;
+
+    .topContainer {
+        margin: 0 0 10px 0;
+
+        .menuContainer {
+            float: left;
+        }
+
+        .logoContainer {
+            text-align: center;
+
+            .logoText {
+                color: #c00;
+                font-size: 1.8em;
+                font-family: Helvetica, Arial;
+                text-decoration: none;
+                letter-spacing: normal;
+            }
+        }
+    }
+
+    .searchContainer {
+
+    }
+}
+
+
+
+
+
+

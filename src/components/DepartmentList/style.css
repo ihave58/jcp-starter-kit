@@ -1,0 +1,19 @@
+.departmentList {
+    .gridTiles {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    @media all and (max-device-width: 500px) {
+        .wrapper {
+            width: 100%;
+        }
+    }
+
+}

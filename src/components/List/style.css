@@ -1,0 +1,71 @@
+.list-main {
+    text-align: center;
+}
+
+.list-main li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list-scroll-h {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.list-scroll-h ul {
+    width: 100%;
+    display: table;
+}
+
+.list-scroll-h ul li {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+}
+
+.list-scroll-v {
+    width: 100%;
+    max-height: 25rem;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.list-scroll-v ul {
+    display: block;
+}
+
+.list-scroll-v ul li {
+    display: block;
+}
+
+.list-as-table, .list-as-table-bordered {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.list-as-table ul, .list-as-table-bordered ul {
+    display: table-row;
+}
+
+.list-as-table ul li, .list-as-table-bordered ul li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.list-as-table-bordered ul li {
+    border-bottom: 0.0625rem solid #eeeeee;
+    border-right: 0.0625rem solid #eeeeee;
+}
+
+.list-as-table-bordered ul li:last-child {
+    border-right: none;
+}
+
+.list-as-table-bordered ul li:last-child:first-child {
+    border-right: 0.0625rem solid #eeeeee;
+}
+
+.list-as-table-bordered ul:last-child li {
+    border-bottom: 0;
+}

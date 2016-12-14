@@ -1,0 +1,44 @@
+@import "../../../src/public/styles/base.css";
+@import "../../public/styles/variables.css";
+
+.homepage {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+
+    .headerContainer {
+        display: flex;
+        align-content: center;
+    }
+
+    .carouselContainer {
+
+    }
+
+    .shopDepartmentsContainer {
+        margin-bottom: 20px;
+
+        h3 {
+            font-size: 1.4em;
+            padding: 20px;
+            text-align: center;
+            background: #cccccc;
+            color: #343434;
+        }
+    }
+
+    .topSellerContainer {
+        margin-bottom: 20px;
+
+        h3 {
+            font-size: 1.4em;
+            padding: 20px;
+            text-align: center;
+            background: #cccccc;
+            color: #343434;
+        }
+    }
+
+    .footerContainer {
+
+    }
+}

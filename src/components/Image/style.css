@@ -1,0 +1,12 @@
+.image-box-main {
+    position: relative;
+
+    /* height: 0; */ /* Commenting out this until we figure out the imageRatio issue fix */
+    overflow: hidden;
+
+    /*background-color: #fafafa;*/ /* light gray image placeholder */
+    & img {
+        top: 0;
+        left: 0;
+    }
+}
