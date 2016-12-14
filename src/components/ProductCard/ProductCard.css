@@ -1,0 +1,82 @@
+@import 'variables.css';
+
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.galleryProduct {
+  font-family: var(--main-font);
+  display: inline-block;
+  width: 225px;
+}
+
+@media all and (max-device-width: 500px) {
+  .galleryProduct {
+    width: 49%;
+  }
+}
+
+.title {
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.imgBlock {
+  text-align: center;
+}
+
+.detailsWrapper {
+  padding: .5rem;
+}
+
+.titleLink {
+  text-decoration: none;
+  color: #333;
+  text-transform: capitalize;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.swatches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.swatches .swatchesInfo {
+  width: 100%;
+  text-align: center;
+  font-size: .59375rem;
+  max-width: 100%;
+  text-transform: uppercase;
+  min-height: 17px;
+  padding: .5rem 0;
+  margin: 0 .1875rem 0 0;
+}
+
+.swatches img, .swatches span {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0;
+  margin-right: .4375rem;
+}
+
+.pricing {
+
+}
+
+.pricing .price {
+  font-weight: 500;
+  font-size: .875rem;
+  color: #c00;
+}
+
+.pricing .strike {
+  font-weight: 300;
+  font-size: .6875rem;
+  text-decoration: line-through;
+  color: #666;
+}

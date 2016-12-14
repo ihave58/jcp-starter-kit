@@ -1,0 +1,166 @@
+.slider {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 0;
+  & li {
+    & img {
+      width: 75%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  & .carousel-block {
+    width: 500%;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    & ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.slide-bullets {
+  text-align: center;
+}
+
+.bullets {
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 2;
+  width: 5px;
+  height: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.bullets:hover {
+  opacity: .50;
+}
+
+@for $i from 1 to 5 {
+  .slide-$ i:checked ~ .slide-bullets .bullets:nth-child($i) {
+    opacity: 1;
+  }
+}
+
+/*@for $i from 1 to 5 {
+.slide-$i:checked ~ .carousel-block {
+    margin-left: 100 - calc($i-100%);
+}
+}*/
+/* Some reason calc is not working.., still debugging it. pushing this manual calc for demo purpose and will revert this once it works*/
+
+.slide-1:checked ~ .carousel-block {
+  margin-left: 0;
+}
+
+.slide-2:checked ~ .carousel-block {
+  margin-left: -100%;
+}
+
+.slide-3:checked ~ .carousel-block {
+  margin-left: -200%;
+}
+
+.slide-4:checked ~ .carousel-block {
+  margin-left: -300%;
+}
+
+.slide-5:checked ~ .carousel-block {
+  margin-left: -400%;
+}
+
+.inner-wrapper {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.control {
+  display: none;
+}
+
+.slide img {
+  width: 25%;
+  float: left;
+}
+
+/* Slider Setup */
+#slider-wrapper {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+#s1 {
+  margin-left: -36px;
+}
+
+#s2 {
+  margin-left: -12px;
+}
+
+#s3 {
+  margin-left: 12px;
+}
+
+#s4 {
+  margin-left: 36px;
+}
+
+.bullets:hover {
+  opacity: .50;
+}
+
+input:checked + .bullets {
+  opacity: 1;
+}
+
+.inner-wrapper {
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.control {
+  display: none;
+}
+
+#Slide1:checked ~ .overflow-wrapper {
+  margin-left: 0%;
+}
+
+#Slide2:checked ~ .overflow-wrapper {
+  margin-left: -100%;
+}
+
+#Slide3:checked ~ .overflow-wrapper {
+  margin-left: -200%;
+}
+
+#Slide4:checked ~ .overflow-wrapper {
+  margin-left: -300%;
+}
+
+.overflow-wrapper {
+  width: 400%;
+  height: 100%;
+  overflow-y: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.slide img {
+  width: 25%;
+  float: left;
+}

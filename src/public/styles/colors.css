@@ -1,0 +1,6 @@
+:root {
+  --red-dark: color(red alpha(-10%));
+  --white: color(white);
+  --gray-light: color(gray alpha(-10%));
+  --gray-dark: color(gray blackness(80%));
+}
